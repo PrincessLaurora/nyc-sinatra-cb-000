@@ -1,10 +1,6 @@
-<h1>Edit Historical Landmark</h1>
+<h1>Create a new Figure</h1>
 
-<form action="/figures/<%= @figures.id %>" method="POST">
-  <input type="hidden" name="_method" value="PATCH">
-
-  <h2><label><%=@figure.name%></label></h2>
-
+<form action="/figures" method="POST">
   <h3><label>Name</label></h3>
   <input type="text" name="figure[name]" id="figure_name"></br>
 
@@ -29,7 +25,5 @@
 <label>Year:</label>
 <input type="text" name="landmark[year_completed]"><br><br><br>
 
-<input type="submit" value="Save">
+  <input type="submit" value="Create New Figure">
 </form>
-<a class="button" href="/figures">Landmarks</a>
-<a class="button" href="/">Home</a>
